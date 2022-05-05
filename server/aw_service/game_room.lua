@@ -1,8 +1,7 @@
 local skynet = require "skynet"
 require "skynet.manager"	-- import skynet.register
 require "GameRequire"
-local tank = require("unit.tank")
-local Map = require('map')
+local Game = require('game')
 local command = {}
 
 function command.Test(key)
@@ -14,8 +13,7 @@ function command.SET(key, value)
 end
 
 skynet.start(function()
-	local map = Map:new(2,2)
-	map:tostring()
+	local game = Game:new()
 	skynet.error("game started lets go!!!")
 	skynet.dispatch("lua", function(session, address, cmd, ...)
 		cmd = cmd:upper()
