@@ -9,7 +9,7 @@ function BaseUnit:getName()
     return "baseunit"
 end
 
-function BaseUnit:moveToPos(int x, int y)
+function BaseUnit:moveToPos(x, y)
     self.x = x
     self.y = y
 end
