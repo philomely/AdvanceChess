@@ -1,0 +1,5 @@
+server/skynet
+server/cservice/
+server/service/
+server/luaclib/
+server/lualib/
