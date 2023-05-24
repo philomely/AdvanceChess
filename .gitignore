@@ -3,3 +3,4 @@ server/cservice/
 server/service/
 server/luaclib/
 server/lualib/
+server/lua
