@@ -1,5 +1,10 @@
 local GrandGame = class('GrandGame')
-function GrandGame:initialize(players, map)
+function GrandGame:initialize()
 
 end
+
+function GrandGame:tick()
+
+end
+
 return GrandGame
