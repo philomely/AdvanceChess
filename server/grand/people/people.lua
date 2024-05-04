@@ -8,6 +8,12 @@ function Poeple:initialize()
         [NEED_AIR] = 10,
         [NEED_WATER] = 20
     }
+    self.action = {
+
+    }
+    self.asset = {
+        
+    }
 end
 
 function Poeple:tick()
