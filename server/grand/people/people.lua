@@ -1,6 +1,8 @@
 require("../base/constants")
-local Poeple = class('Poeple')
-function Poeple:initialize()
+require("../item/water")
+local People = class('People')
+local Water = class('Water')
+function People:initialize()
     self.population = 0
     self.happiness = 0
     self.wellbeing = 0
@@ -12,16 +14,13 @@ function Poeple:initialize()
 
     }
     self.asset = {
-        
+        Water:new()
     }
 end
 
-function Poeple:tick()
-    for k,v in pairs(self.needs) do
-        print(k.." = "..v)
-    end
-    print(NEED_AIR)
+function People:tick()
+    --prioritize need and take action
 
 end
 
-return Poeple
+return People
